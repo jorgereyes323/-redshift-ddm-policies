@@ -18,8 +18,8 @@ graph TB
 
     subgraph Tables["📊 Redshift Tables"]
         subgraph Staging["Staging Tables"]
-            XSTG["xstg_*<br/>(External Staging)"]
-            TSTG["tstg_*<br/>(Temp Staging)"]
+            XSTG["xstg_*<br/>(CSng Staging)"]
+            TSTG["tstg_*<br/>(TOP Staging)"]
         end
         subgraph Analytics["Analytics Tables"]
             TFAC["tfac_*<br/>(Fact Tables)"]
@@ -81,8 +81,8 @@ graph TB
 - **ZIP Partial Mask**: Masks first 8 characters to `XXXXX-XX00`
 
 ### 3. Data Tables (Storage Layer)
-- **xstg_***: External staging tables (arawg, arentity, arpoe, etc.)
-- **tstg_***: Temporary staging tables (debt, debtor, offset, payment, etc.)
+- **xstg_***: CSng staging tables (arawg, arentity, arpoe, etc.)
+- **tstg_***: TOP staging tables (debt, debtor, offset, payment, etc.)
 - **tfac_***: Fact tables (post_match, ng_post_match)
 - **tdim_***: Dimension tables
 
