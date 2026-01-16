@@ -12,7 +12,7 @@ Dynamic Data Masking (DDM) is a security feature that protects sensitive data by
 - **No Data Modification**: Protects data in place without storage overhead or multiple copies
 - **Customizable Masking**: Supports full/partial redaction, SQL expressions, and UDFs
 
-DDM balances privacy compliance (GDPR, HIPAA) with data accessibility for analytics.
+DDM balances privacy compliance with data accessibility for analytics.
 
 ## Overview
 
@@ -59,8 +59,8 @@ This repository contains Redshift DDM policies for protecting sensitive data inc
 
 ## Tables Covered
 
-- xstg_* tables (external staging)
-- tstg_* tables (temporary staging)
+- xstg_* tables (staging)
+- tstg_* tables (staging)
 - tfac_* tables (fact tables)
 - tdim_* tables (dimension tables)
 
