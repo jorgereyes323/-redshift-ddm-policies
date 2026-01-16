@@ -2,6 +2,18 @@
 
 Amazon Redshift Jupyter Notebook for implementing Dynamic Data Masking policies for DDMAP sensitive data.
 
+## What is Redshift DDM?
+
+Dynamic Data Masking (DDM) is a security feature that protects sensitive data by applying masking rules at query time, not at storage time. This approach provides:
+
+- **Real-time Masking**: Applies masking when queries run, keeping original data intact
+- **Policy-Driven & Granular**: Uses SQL-based policies for specific columns, roles, or users
+- **Data Utility**: Maintains data usability for analytics while controlling access
+- **No Data Modification**: Protects data in place without storage overhead or multiple copies
+- **Customizable Masking**: Supports full/partial redaction, SQL expressions, and UDFs
+
+DDM balances privacy compliance (GDPR, HIPAA) with data accessibility for analytics.
+
 ## Overview
 
 This repository contains Redshift DDM policies for protecting sensitive data including:
